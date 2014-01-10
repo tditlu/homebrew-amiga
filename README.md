@@ -16,10 +16,10 @@ Tap the repository:
 
 Then install wanted formula:
 
-	`brew install vbcc`
+	brew install vbcc
 
-	`brew install vasm`
+	brew install vasm
 
-	`brew install vlink`
+	brew install vlink
 
-	`brew install shrinkler`
+	brew install shrinkler
