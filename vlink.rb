@@ -4,7 +4,7 @@ class Vlink < Formula
   homepage 'http://sun.hasenbraten.de/vlink/'
   url 'http://todi.se/brew/vlink/0.14a/vlink.tar.gz'
   version '0.14b'
-  sha1 '1357873bca4e0a84839f5c2dfa3f7f43a1ed5883'
+  sha1 '0b0cf406bba78199fc064df00f50539a6725956c'
 
   def install
     mkdir 'object'
