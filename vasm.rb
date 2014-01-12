@@ -4,7 +4,7 @@ class Vasm < Formula
   homepage 'http://sun.hasenbraten.de/vasm/'
   url 'http://todi.se/brew/vasm/1.6b/vasm.tar.gz'
   version '1.6b'
-  sha1 'e0a4c329c1310c02545060a78b0bb78bb1a29d9e'
+  sha1 '4b35aa0220140761e5e876b65e2c97a0066f2b91'
 
   def install
     mkdir 'obj'
