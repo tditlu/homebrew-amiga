@@ -7,7 +7,7 @@ class Vasm < Formula
   sha1 '4b35aa0220140761e5e876b65e2c97a0066f2b91'
 
   def install
-    mkdir 'obj', :force => true
+    system "mkdir -f obj"
 
     inreplace 'Makefile' do |s|
       s.change_make_var! 'CC', "#{ENV.cc}"
