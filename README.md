@@ -10,7 +10,7 @@ A repository for **Amiga Development** related brews.
 
 ## Installation
 
-Then install wanted formula:
+Install wanted formula:
 
 	brew install tditlu/amiga/vbcc
 
