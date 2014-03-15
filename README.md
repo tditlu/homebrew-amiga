@@ -10,16 +10,12 @@ A repository for **Amiga Development** related brews.
 
 ## Installation
 
-Tap the repository:
+Install wanted formula:
 
-	brew tap tditlu/amiga
+	brew install tditlu/amiga/vbcc
 
-Then install wanted formula:
+	brew install tditlu/amiga/vasm
 
-	brew install vbcc
+	brew install tditlu/amiga/vlink
 
-	brew install vasm
-
-	brew install vlink
-
-	brew install shrinkler
+	brew install tditlu/amiga/shrinkler
