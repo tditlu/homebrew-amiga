@@ -107,18 +107,6 @@ class Vbcc < Formula
 end
 
 __END__
---- a/frontend/vc.c 2011-01-04 02:31:00.000000000 +0100
-+++ b/frontend/vc.c 2013-01-12 19:26:00.000000000 +0100
-@@ -219,7 +219,7 @@
-       if(file) break;
-     }
-     if(!file){
--      p=getenv("VBCC");
-+      p="/usr/local/opt/vbcc";
-       if(p){
-         name=malloc(strlen(p)+strlen(cfg_name)+20);
-         if(!name){printf(nomem);raus(EXIT_FAILURE);}
-
 --- a/datatypes/dtgen.c 2010-09-05 19:10:00.000000000 +0100
 +++ b/datatypes/dtgen.c 2013-01-12 19:26:00.000000000 +0100
 @@ -130,22 +130,13 @@
