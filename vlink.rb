@@ -2,9 +2,9 @@ require 'formula'
 
 class Vlink < Formula
   homepage 'http://sun.hasenbraten.de/vlink/'
-  url 'http://todi.se/brew/vlink/0.14c/vlink.tar.gz'
-  version '0.14c'
-  sha1 'e121dbdcad0249dd92c729fcf08d0e619b7dc1fd'
+  url 'http://todi.se/brew/vlink/0.14d/vlink.tar.gz'
+  version '0.14d'
+  sha1 '1e5065ce14f494772c3090db7eda6c30972bc37d'
 
   def install
     mkdir 'object'
