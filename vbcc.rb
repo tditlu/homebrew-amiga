@@ -1,45 +1,40 @@
 require 'formula'
 
-class VbccTargetM68kAmigaOS < Formula
-  homepage 'http://sun.hasenbraten.de/vbcc/index.php?view=targets'
-  url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_m68k-amigaos.lha", :using => :nounzip
-  version '2011-08-06'
-  sha1 'f0a7ac5ffb670a2deb5213867fd75d516774c459'
-end
-
-class VbccTargetM68kAtari < Formula
-  homepage 'http://sun.hasenbraten.de/vbcc/index.php?view=targets'
-  url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_m68k-atari.lha", :using => :nounzip
-  version '2011-08-06'
-  sha1 'ee76920b2639057343ef322b95937c5493ef8dc7'
-end
-
-class VbccTargetCFAtari < Formula
-  homepage 'http://sun.hasenbraten.de/vbcc/index.php?view=targets'
-  url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_cf-atari.lha", :using => :nounzip
-  version '2011-08-06'
-  sha1 '3caa2823466940dab5ce57cbdd914c225dc19915'
-end
-
-class VbccTargetPPCMorphOS < Formula
-  homepage 'http://sun.hasenbraten.de/vbcc/index.php?view=targets'
-  url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_ppc-morphos.lha", :using => :nounzip
-  version '2011-08-06'
-  sha1 '21bc3366d993d565478fd9d6413fe426afa6c049'
-end
-
-class VbccTargetPPCPowerUp < Formula
-  homepage 'http://sun.hasenbraten.de/vbcc/index.php?view=targets'
-  url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_ppc-powerup.lha", :using => :nounzip
-  version '2011-08-06'
-  sha1 '603588b35594cf63cbb0fd8616c530aad765c880'
-end
-
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
   url 'http://todi.se/brew/vbcc/0.9b/vbcc.tar.gz'
   version '0.9b'
   sha1 'f62c34d14d378142d3c5d94517965b5ec41ca858'
+
+  resource "vbcc_target_m68k_amigaos" do
+    url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_m68k-amigaos.lha", :using => :nounzip
+    version '2011-08-06'
+    sha1 'f0a7ac5ffb670a2deb5213867fd75d516774c459'
+  end
+
+  resource "vbcc_target_m68k_atari" do
+    url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_m68k-atari.lha", :using => :nounzip
+    version '2011-08-06'
+    sha1 'ee76920b2639057343ef322b95937c5493ef8dc7'
+  end
+
+  resource "vbcc_target_cf_atari" do
+    url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_cf-atari.lha", :using => :nounzip
+    version '2011-08-06'
+    sha1 '3caa2823466940dab5ce57cbdd914c225dc19915'
+  end
+
+  resource "vbcc_target_ppc_morphos" do
+    url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_ppc-morphos.lha", :using => :nounzip
+    version '2011-08-06'
+    sha1 '21bc3366d993d565478fd9d6413fe426afa6c049'
+  end
+
+  resource "vbcc_target_ppc_powerup" do
+    url "http://todi.se/brew/vbcc/2011-08-06/vbcc_target_ppc-powerup.lha", :using => :nounzip
+    version '2011-08-06'
+    sha1 '603588b35594cf63cbb0fd8616c530aad765c880'
+  end
 
   depends_on 'lha' => :build
 
@@ -58,7 +53,6 @@ class Vbcc < Formula
       s.change_make_var! 'LDFLAGS', "-lm #{ENV.ldflags}"
     end
 
-
     targets = ['alpha', 'arm', 'c16x', 'generic', 'hc12', 'i386', 'm68k', 'm68ks', 'ppc', 'z']
 
     targets.each do |target|
@@ -71,27 +65,27 @@ class Vbcc < Formula
 
     (prefix/'targets').mkpath
 
-    VbccTargetM68kAmigaOS.new.brew do
+    resource("vbcc_target_m68k_amigaos").stage do
       system 'lha x vbcc_target_m68k-amigaos.lha'
       (prefix/'targets/m68k-amigaos').install Dir['vbcc_target_m68k-amigaos/targets/m68k-amigaos/*']
     end
 
-    VbccTargetM68kAtari.new.brew do
+    resource("vbcc_target_m68k_atari").stage do
       system 'lha x vbcc_target_m68k-atari.lha'
       (prefix/'targets/m68k-atari').install Dir['vbcc_target_m68k-atari/targets/m68k-atari/*']
     end
 
-    VbccTargetCFAtari.new.brew do
+    resource("vbcc_target_cf_atari").stage do
       system 'lha x vbcc_target_cf-atari.lha'
       (prefix/'targets/cf-atari').install Dir['vbcc_target_cf-atari/targets/cf-atari/*']
     end
 
-    VbccTargetPPCMorphOS.new.brew do
+    resource("vbcc_target_ppc_morphos").stage do
       system 'lha x vbcc_target_ppc-morphos.lha'
       (prefix/'targets/ppc-morphos').install Dir['vbcc_target_ppc-morphos/targets/ppc-morphos/*']
     end
 
-    VbccTargetPPCPowerUp.new.brew do
+    resource("vbcc_target_ppc_powerup").stage do
       system 'lha x vbcc_target_ppc-powerup.lha'
       (prefix/'targets/ppc-powerup').install Dir['vbcc_target_ppc-powerup/targets/ppc-powerup/*']
     end
