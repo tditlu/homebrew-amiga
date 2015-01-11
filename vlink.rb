@@ -2,12 +2,12 @@ require 'formula'
 
 class Vlink < Formula
   homepage 'http://sun.hasenbraten.de/vlink/'
-  url 'http://todi.se/brew/vlink/0.14d/vlink.tar.gz'
-  version '0.14d'
-  sha1 '1e5065ce14f494772c3090db7eda6c30972bc37d'
+  url 'http://todi.se/brew/vlink/0.15/vlink.tar.gz'
+  version '0.15'
+  sha1 'b1c677131a535a223411fb294b36265ceace8809'
 
   def install
-    mkdir 'object'
+    mkdir 'objects'
 
     inreplace 'Makefile' do |s|
       s.change_make_var! 'CC', "#{ENV.cc}"
