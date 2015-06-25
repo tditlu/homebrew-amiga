@@ -123,9 +123,9 @@ class Vbcc < Formula
 end
 
 __END__
---- a/datatypes/dtgen.c 2010-09-05 19:10:00.000000000 +0100
-+++ b/datatypes/dtgen.c 2013-01-12 19:26:00.000000000 +0100
-@@ -130,22 +130,13 @@
+--- a/datatypes/dtgen.c 2015-06-25 10:02:46.000000000 +0200
++++ b/datatypes/dtgen.c 2015-06-25 10:03:21.000000000 +0200
+@@ -130,23 +130,14 @@
  int askyn(char *def)
  {
    char in[8];
@@ -146,7 +146,7 @@ __END__
 -  fflush(stdout);
 -  fgets(in,127,stdin);
 -  if(in[strlen(in)-1]=='\n') in[strlen(in)-1]=0;
-   if(!*in) strcpy(in,def);
+-  if(!*in) strcpy(in,def);
++  strcpy(in,def);
    return in;
  }
-
