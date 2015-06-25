@@ -50,7 +50,6 @@ class Vbcc < Formula
 
   depends_on 'lha' => :build
 
-  # Adding absolute path to vc, if VBCC is not defined
   # Remove interactive configuration, using default
   def patches
     DATA
