@@ -3,9 +3,9 @@ require 'formula'
 class Vasm < Formula
 
   homepage 'http://sun.hasenbraten.de/vasm/'
-  url 'http://todi.se/brew/vasm/1.7b/vasm.tar.gz'
-  version '1.7b'
-  sha1 '8df888fa4501b98f55296efe7304585e40bdaaba'
+  url 'http://todi.se/brew/vasm/1.7d/vasm.tar.gz'
+  version '1.7d'
+  sha1 'beb6043bd72a85078401a0051a8419e5deb2481d'
 
   def install
     system "mkdir -p obj"
