@@ -8,9 +8,7 @@ A repository for **Amiga Development** related brews.
 Requirements
 ------------
 
--   [Homebrew][1]
-
-    [1]: <https://github.com/mxcl/homebrew>
+* [Homebrew](https://github.com/mxcl/homebrew)
 
  
 
