@@ -2,8 +2,8 @@ require 'formula'
 
 class Ira < Formula
   homepage 'http://sun.hasenbraten.de/~frank/projects/'
-  url 'http://todi.se/brew/ira/2.08beta/ira.lha'
-  version '2.08beta'
+  url 'http://todi.se/brew/ira/2.08/ira.lha'
+  version '2.08'
   sha256 '87f899a908b954f3c923e5d6552146e8d64ffcea89c89103f4d8c36b0ae6b6a1'
 
   depends_on 'lha' => :build
