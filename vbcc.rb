@@ -4,48 +4,48 @@ class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
   url 'http://todi.se/brew/vbcc/0.9e/vbcc.tar.gz'
   version '0.9e'
-  sha1 '424ccb92e3fecff6f0be1b1f3be9bcaf90ccb4c9'
+  sha256 'bbc6fc1face799af3bfa07f5920c48e0729c2ad3f25af7e6611b51dff7c2d4ef'
 
   resource "vbcc_target_cf_atari" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_cf-atari.lha", :using => :nounzip
     version '2014-12-30'
-    sha1 '3444ba7c29476f45fc9f3793db03e1fb1d1cd546'
+    sha256 '5f125d4bace0e9c4d75dcc38b5824b7ab39b6c514d224c232152f9bb2b241e64'
   end
 
   resource "vbcc_target_m68k_amigaos" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_m68k-amigaos.lha", :using => :nounzip
     version '2014-12-30'
-    sha1 'f5942c7c8b57d9d54b0ba5bea534453c92e03205'
+    sha256 '07003adc685fdbd981d62a90118683dbd36ee368991b12a22c809d25de843168'
   end
 
   resource "vbcc_target_m68k_atari" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_m68k-atari.lha", :using => :nounzip
     version '2014-12-30'
-    sha1 '5613329750f456c753b465f8f8be032bdcd4aed1'
+    sha256 '98f3d87777f6068009830320acc97e3c509bd067522f2d03869d7dd3409aadec'
   end
 
   resource "vbcc_target_ppc_amigaos" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_ppc-amigaos.lha", :using => :nounzip
     version '2014-12-30'
-    sha1 'b3c8406a92cab47b6a6c9ab1cb8ca579544e0c40'
+    sha256 '5690805ffcfa0835af50d31715ae5e60103189ae13168ffa6d025a26173f92d2'
   end
 
   resource "vbcc_target_ppc_morphos" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_ppc-morphos.lha", :using => :nounzip
     version '2014-12-30'
-    sha1 '3162b761e990c43817e7c12f2c70609122fd4264'
+    sha256 '9653aea1d8de809283ab8f2b0e40a3d45708a5da6a5cd07e192a3a06a2fae4a4'
   end
 
   resource "vbcc_target_ppc_powerup" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_ppc-powerup.lha", :using => :nounzip
     version '2014-12-30'
-    sha1 '83131805cd7bf3d42cd452f0ecee007fd1abe243'
+    sha256 '8efe1d3d41497b59580174d1a879874af7d5bc7f179f3b9435d851dcc42ce71b'
   end
 
   resource "vbcc_target_ppc_warpos" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_ppc-warpos.lha", :using => :nounzip
     version '2014-12-30'
-    sha1 '958e1cd8b412a60fc23b02c3589f22d48891f88a'
+    sha256 'bcefc389a26977a3809b41678403c4a3bc6ae95e60ca8c8f613725ce2a0c0ccb'
   end
 
   depends_on 'lha' => :build

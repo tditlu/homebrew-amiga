@@ -4,7 +4,7 @@ class Ira < Formula
   homepage 'http://sun.hasenbraten.de/~frank/projects/'
   url 'http://todi.se/brew/ira/2.08beta/ira.lha'
   version '2.08beta'
-  sha1 'd7f7979c04d10082ede8df4dbe43692dfd2d4007'
+  sha256 '87f899a908b954f3c923e5d6552146e8d64ffcea89c89103f4d8c36b0ae6b6a1'
 
   depends_on 'lha' => :build
 
