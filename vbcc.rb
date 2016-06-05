@@ -2,9 +2,9 @@ require 'formula'
 
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
-  url 'http://todi.se/brew/vbcc/0.9d/vbcc.tar.gz'
-  version '0.9d'
-  sha1 '325d043b6224c584a9c29abcfebc236f5b774607'
+  url 'http://todi.se/brew/vbcc/0.9e/vbcc.tar.gz'
+  version '0.9e'
+  sha1 '424ccb92e3fecff6f0be1b1f3be9bcaf90ccb4c9'
 
   resource "vbcc_target_cf_atari" do
     url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_cf-atari.lha", :using => :nounzip
