@@ -2,14 +2,14 @@ require 'formula'
 
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
-  url 'http://todi.se/brew/vbcc/0.9e/vbcc.tar.gz'
-  version '0.9e'
-  sha256 'bbc6fc1face799af3bfa07f5920c48e0729c2ad3f25af7e6611b51dff7c2d4ef'
+  url 'http://todi.se/brew/vbcc/0.9f/vbcc.tar.gz'
+  version '0.9f'
+  sha256 '094a5cb6a0cf8fe5ef0fe5eced668e60dd708841049ce1b9fb33917b3e927325'
 
   resource "vbcc_target_m68k_amigaos" do
-    url "http://todi.se/brew/vbcc/2014-12-30/vbcc_target_m68k-amigaos.lha", :using => :nounzip
-    version '2014-12-30'
-    sha256 '07003adc685fdbd981d62a90118683dbd36ee368991b12a22c809d25de843168'
+    url "http://todi.se/brew/vbcc/2017-05-18/vbcc_target_m68k-amigaos.lha", :using => :nounzip
+    version '2017-05-18'
+    sha256 'bce0a83f8de93d04141d1615634e930b6c7c67999952fb3504f5a2cb5f06b4d9'
   end
 
   depends_on 'lha' => :build
