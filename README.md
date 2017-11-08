@@ -39,7 +39,7 @@ brew install tditlu/amiga/vasm
 brew install tditlu/amiga/vlink
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.4
+### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.4 (commit [b20d7d2](https://github.com/askeksa/Shrinkler/commit/b20d7d2e4b42c1d6c907b5c7259644515008e978))
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/shrinkler
