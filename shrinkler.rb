@@ -3,16 +3,12 @@ require 'formula'
 class Shrinkler < Formula
   desc "Shrinkler executable file compressor for Amiga by Blueberry"
   homepage "https://github.com/askeksa/Shrinkler"
-  url "http://todi.se/brew/shrinkler/b20d7d2/shrinkler.zip"
-  version "4.4.0.2017.11.05"
-  sha256 "c2fb19f94e0eda5ac52b07fa131297a024ff6648fd5bc020d3619c7d4933cc54"
-
-  depends_on 'python' => :build
+  url "http://todi.se/brew/shrinkler/4.5/shrinkler.zip"
+  version "4.5"
+  sha256 "15a4219ad5279d2ebdd6917b99a80c721acaa5d6c8d045adffcaf2761fa6e71d"
 
   def install
-    system 'make PLATFORM=native-64'
-    File.rename 'build/native-64/Shrinkler', 'build/native-64/shrinkler'
-    bin.install 'build/native-64/shrinkler'
+    File.rename 'MacOSX/Shrinkler', 'MacOSX/shrinkler'
+    bin.install 'MacOSX/shrinkler'
   end
-
 end
