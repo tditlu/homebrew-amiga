@@ -27,13 +27,13 @@ brew tap tditlu/amiga
 brew install tditlu/amiga/vbcc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### [vasm](http://sun.hasenbraten.de/vasm/) v1.8a
+### [vasm](http://sun.hasenbraten.de/vasm/) v1.8b
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/vasm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### [vlink](http://sun.hasenbraten.de/vlink/) v0.16a
+### [vlink](http://sun.hasenbraten.de/vlink/) v0.16b
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/vlink
