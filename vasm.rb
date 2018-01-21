@@ -1,5 +1,3 @@
-require 'formula'
-
 class Vasm < Formula
   homepage 'http://sun.hasenbraten.de/vasm/'
   url 'http://todi.se/brew/vasm/1.8b/vasm.tar.gz'
@@ -21,5 +19,4 @@ class Vasm < Formula
     bin.install 'vobjdump'
 
   end
-
 end
