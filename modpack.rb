@@ -1,5 +1,3 @@
-require 'formula'
-
 class Modpack < Formula
   desc ""
   homepage "https://github.com/amigadev/modpack"
@@ -11,5 +9,4 @@ class Modpack < Formula
     system 'make'
     bin.install 'modpack'
   end
-
 end
