@@ -1,5 +1,3 @@
-require 'formula'
-
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
   url 'http://todi.se/brew/vbcc/0.9f/vbcc.tar.gz'
