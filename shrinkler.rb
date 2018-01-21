@@ -1,5 +1,3 @@
-require 'formula'
-
 class Shrinkler < Formula
   desc "Shrinkler executable file compressor for Amiga by Blueberry"
   homepage "https://github.com/askeksa/Shrinkler"
