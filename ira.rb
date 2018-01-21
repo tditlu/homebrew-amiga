@@ -1,5 +1,3 @@
-require 'formula'
-
 class Ira < Formula
   homepage 'http://sun.hasenbraten.de/~frank/projects/'
   url 'http://todi.se/brew/ira/2.08/ira.lha'
@@ -17,5 +15,4 @@ class Ira < Formula
 
     bin.install 'ira'
   end
-
 end
