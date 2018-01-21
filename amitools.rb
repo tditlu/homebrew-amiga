@@ -1,11 +1,10 @@
-require 'formula'
-
 class Amitools < Formula
   homepage 'https://github.com/cnvogelg/amitools/'
   url 'http://todi.se/brew/amitools/0.1.0/amitools.zip'
   version '0.1.0'
   sha256 '8718cfca1f987d49cb2cdd6bf5f64b080efb4aaf127fc76436e6400254cab565'
 
+  depends_on :python if MacOS.version <= :snow_leopard
   depends_on 'cython' => :build
 
   def install
