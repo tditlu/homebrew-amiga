@@ -1,5 +1,3 @@
-require 'formula'
-
 class Vlink < Formula
   homepage 'http://sun.hasenbraten.de/vlink/'
   url 'http://todi.se/brew/vlink/0.16b/vlink.tar.gz'
