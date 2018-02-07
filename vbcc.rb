@@ -1,13 +1,19 @@
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
-  url 'http://todi.se/brew/vbcc/0.9f/vbcc.tar.gz'
-  version '0.9f'
-  sha256 '094a5cb6a0cf8fe5ef0fe5eced668e60dd708841049ce1b9fb33917b3e927325'
+  url 'http://todi.se/brew/vbcc/0.91f/vbcc.tar.gz'
+  version '0.91f'
+  sha256 '63a652c07b001a138566a84dd6059403cac325c597b646acb41f70a9d0ea4097'
 
   resource "vbcc_target_m68k_amigaos" do
-    url "http://todi.se/brew/vbcc/2017-05-18/vbcc_target_m68k-amigaos.lha", :using => :nounzip
-    version '2017-05-18'
-    sha256 'bce0a83f8de93d04141d1615634e930b6c7c67999952fb3504f5a2cb5f06b4d9'
+    url "http://todi.se/brew/vbcc/2018-02-07/vbcc_target_m68k-amigaos.lha", :using => :nounzip
+    version '2017-02-07'
+    sha256 '515e471b007b3cfe2ba2d83445d08c1d3696b48e93f106d070f7ee4eb72b0f42'
+  end
+
+  resource "vbcc_target_m68k_kick13" do
+    url "http://todi.se/brew/vbcc/2018-02-07/vbcc_target_m68k-kick13.lha", :using => :nounzip
+    version '2017-02-07'
+    sha256 '68b73adb66dbb59302c9cb06f0a7fb91171b0b967a974d2d220916ac65926573'
   end
 
   depends_on 'lha' => :build
@@ -36,6 +42,11 @@ class Vbcc < Formula
     resource("vbcc_target_m68k_amigaos").stage do
       system 'lha x vbcc_target_m68k-amigaos.lha'
       (prefix/'targets/m68k-amigaos').install Dir['vbcc_target_m68k-amigaos/targets/m68k-amigaos/*']
+    end
+
+    resource("vbcc_target_m68k_kick13").stage do
+      system 'lha x vbcc_target_m68k-kick13.lha'
+      (prefix/'targets/m68k-kick13').install Dir['vbcc_target_m68k-kick13/targets/m68k-kick13/*']
     end
 
   end
