@@ -51,7 +51,7 @@ class Vbcc < Formula
 
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     You may need to add the following to your .bashrc:
       export VBCC=$(brew --prefix vbcc)
     EOS
