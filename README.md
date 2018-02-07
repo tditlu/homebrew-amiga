@@ -21,7 +21,7 @@ Installation
 brew tap tditlu/amiga
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9f
+### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9f patch 1
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/vbcc
