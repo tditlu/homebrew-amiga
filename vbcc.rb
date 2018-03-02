@@ -1,7 +1,7 @@
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
   url 'http://todi.se/brew/vbcc/0.91f/vbcc.tar.gz'
-  version '0.91f'
+  version '0.911f'
   sha256 '63a652c07b001a138566a84dd6059403cac325c597b646acb41f70a9d0ea4097'
 
   resource "vbcc_target_m68k_amigaos" do
