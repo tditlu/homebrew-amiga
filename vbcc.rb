@@ -58,7 +58,7 @@ class Vbcc < Formula
     (prefix/'config').mkpath
 
     resource("vbcc_unix_config").stage do
-      (prefix/'config').install Dir['*']
+      (prefix/'config').install Dir['{aos68k,aos68km,aos68kr,kick13,kick13m,kick13r}']
     end
 
   end
