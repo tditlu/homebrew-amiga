@@ -6,14 +6,20 @@ class Vbcc < Formula
 
   resource "vbcc_target_m68k_amigaos" do
     url "http://todi.se/brew/vbcc/2018-02-07/vbcc_target_m68k-amigaos.lha", :using => :nounzip
-    version '2017-02-07'
+    version '2018-02-07'
     sha256 '515e471b007b3cfe2ba2d83445d08c1d3696b48e93f106d070f7ee4eb72b0f42'
   end
 
   resource "vbcc_target_m68k_kick13" do
     url "http://todi.se/brew/vbcc/2018-02-07/vbcc_target_m68k-kick13.lha", :using => :nounzip
-    version '2017-02-07'
+    version '2018-02-07'
     sha256 '68b73adb66dbb59302c9cb06f0a7fb91171b0b967a974d2d220916ac65926573'
+  end
+
+  resource "vbcc_unix_config" do
+    url "http://todi.se/brew/vbcc/2017-08-14/vbcc_unix_config.tar.gz"
+    version '2017-08-14'
+    sha256 '15e24da750943c50648fa0e8aca8a0d540c9a61610bfd62c31672715b0ec1d45'
   end
 
   depends_on 'lha' => :build
@@ -47,6 +53,12 @@ class Vbcc < Formula
     resource("vbcc_target_m68k_kick13").stage do
       system 'lha x vbcc_target_m68k-kick13.lha'
       (prefix/'targets/m68k-kick13').install Dir['vbcc_target_m68k-kick13/targets/m68k-kick13/*']
+    end
+
+    (prefix/'config').mkpath
+
+    resource("vbcc_unix_config").stage do
+      (prefix/'config').install Dir['*']
     end
 
   end
