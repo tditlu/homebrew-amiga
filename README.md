@@ -64,9 +64,9 @@ brew install tditlu/amiga/ira
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-### [Propack](https://github.com/lab313ru/rnc_propack_source) v1.2
+### [RNC ProPackED](https://github.com/lab313ru/rnc_propack_source) v1.2
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/propack
+brew install tditlu/amiga/rnc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
