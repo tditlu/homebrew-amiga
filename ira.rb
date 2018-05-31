@@ -11,8 +11,9 @@ class Ira < Formula
       s.change_make_var! 'CC', "#{ENV.cc} -std=c9x"
     end
 
-    system 'make'
-
-    bin.install 'ira'
+    Dir.chdir 'ira' do
+      system 'make'
+      bin.install 'ira'
+    end
   end
 end
