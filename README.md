@@ -57,7 +57,7 @@ brew install tditlu/amiga/amitools
 brew install tditlu/amiga/modpack
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### IRA v2.08
+### [IRA](http://aminet.net/package/dev/asm/ira) v2.09
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/ira
