@@ -30,7 +30,7 @@ brew install tditlu/amiga/vbcc
 
  
 
-### [vasm](http://sun.hasenbraten.de/vasm/) v1.8c
+### [vasm](http://sun.hasenbraten.de/vasm/) v1.8d
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/vasm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
