@@ -30,7 +30,7 @@ brew install tditlu/amiga/vbcc
 
  
 
-### [vasm](http://sun.hasenbraten.de/vasm/) v1.8d
+### [vasm](http://sun.hasenbraten.de/vasm/) v1.8e
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/vasm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -74,7 +74,7 @@ brew install tditlu/amiga/ira
 
  
 
-### [RNC ProPackED](https://github.com/lab313ru/rnc_propack_source) v1.3
+### [RNC ProPackED](https://github.com/lab313ru/rnc_propack_source) v1.4
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 brew install tditlu/amiga/rnc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
