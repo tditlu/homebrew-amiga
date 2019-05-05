@@ -1,84 +1,44 @@
-Homebrew-Amiga
-==============
+# Homebrew-Amiga
+
 A repository for **Amiga Development** related brews.
 
- 
-
-Requirements:
-------------
+## Requirements:
 * [Homebrew](https://github.com/mxcl/homebrew)
 
- 
-
-Installation:
-------------
+## Installation:
 
 ### Tap the repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew tap tditlu/amiga
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	brew tap tditlu/amiga
 
- 
-
-Formulas:
-------------
+## Formulas:
 
 ### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9f patch 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/vbcc
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
+	brew install tditlu/amiga/vbcc
 
 ### [vasm](http://sun.hasenbraten.de/vasm/) v1.8e
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/vasm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
+	brew install tditlu/amiga/vasm
 
 ### [vlink](http://sun.hasenbraten.de/vlink/) v0.16b
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/vlink
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	brew install tditlu/amiga/vlink
 
- 
+### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.0
+	brew install tditlu/amiga/amigeconv
 
 ### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.5
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/shrinkler
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
+	brew install tditlu/amiga/shrinkler
 
 ### [amitools](https://github.com/cnvogelg/amitools) v0.1.0
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/amitools
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
+	brew install tditlu/amiga/amitools
 
 ### [Modpack](https://github.com/amigadev/modpack)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/modpack
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	brew install tditlu/amiga/modpack
 > Player:
 > [http://aminet.net/package/mus/misc/P6108](http://aminet.net/package/mus/misc/P6108)
 
- 
-
 ### [IRA](http://aminet.net/package/dev/asm/ira) v2.09
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/ira
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
+	brew install tditlu/amiga/ira
 
 ### [RNC ProPackED](https://github.com/lab313ru/rnc_propack_source) v1.4
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-brew install tditlu/amiga/rnc
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	brew install tditlu/amiga/rnc
 > **Unpacker**:
 > [http://aminet.net/package/util/pack/RNC_ProPack](http://aminet.net/package/util/pack/RNC_ProPack)
-
- 
