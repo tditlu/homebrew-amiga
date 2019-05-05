@@ -1,4 +1,4 @@
-class Modpack < Formula
+class Amigeconv < Formula
   desc ""
   homepage "https://github.com/tditlu/amigeconv"
   url "http://todi.se/brew/amigeconv/1.0.0/amigeconv.zip"
