@@ -29,7 +29,7 @@ A repository for **Amiga Development** related brews.
 
 ### [amitools](https://github.com/cnvogelg/amitools) v0.2.0
 	brew install python@2
-	$(brew --prefix python@2)/bin/pip2
+	$(brew --prefix python@2)/bin/pip2 amitools
 
 ### [Modpack](https://github.com/amigadev/modpack)
 	brew install tditlu/amiga/modpack
