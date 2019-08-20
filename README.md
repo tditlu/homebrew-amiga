@@ -43,3 +43,6 @@ A repository for **Amiga Development** related brews.
 	brew install tditlu/amiga/rnc
 > **Unpacker**:
 > [http://aminet.net/package/util/pack/RNC_ProPack](http://aminet.net/package/util/pack/RNC_ProPack)
+
+### [gcc](https://github.com/BartmanAbyss/gcc/tree/amiga-8_3_0) v8.3.0
+	brew install tditlu/amiga/gcc
