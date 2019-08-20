@@ -1,4 +1,4 @@
-class GccAmiga < Formula
+class Gcc < Formula
   homepage "https://github.com/BartmanAbyss/gcc/tree/amiga-8_3_0"
   url "http://todi.se/brew/gcc_amiga/8.3.0/gcc-amiga-8_3_0.zip"
   sha256 "9b22c6683f4ca3045c0f3cbb7cf3a7ef137ecf64fa90896d2788b2bff9d37b60"
