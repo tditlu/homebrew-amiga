@@ -23,9 +23,6 @@ helloworld.elf: helloworld.o
 helloworld.o: helloworld.c
 	$(CC) $(CCFLAGS) -c -o $@ $<
 
-gcc8_a_support.o: gcc8_a_support.s
-	$(CC) $(CCFLAGS) $(ASFLAGS) -xassembler-with-cpp -c -o $@ $<
-
 -include helloworld.d
 
 .PHONY: clean
