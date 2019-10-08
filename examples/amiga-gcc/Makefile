@@ -11,6 +11,8 @@ CCFLAGS = -g -MP -MMD -m68000 -Ofast -nostdlib -Wall -Wno-pointer-sign -Wno-unus
 ASFLAGS = -Wa,-g,--verbose
 LDFLAGS = -Wl,--emit-relocs,-Ttext=0,-Map=helloworld.map
 
+.PHONY: all
+
 all: helloworld.exe
 
 helloworld.exe: helloworld.elf
