@@ -46,3 +46,6 @@ A repository for **Amiga Development** related brews.
 
 ### [gcc](https://github.com/BartmanAbyss/gcc/tree/amiga-8_3_0) v8.3.0
 	brew install tditlu/amiga/gcc
+
+### [elf2hunk](https://github.com/BartmanAbyss/vscode-amiga-debug/blob/master/bin/elf2hunk.c) v0.7.0
+	brew install tditlu/amiga/elf2hunk
