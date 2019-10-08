@@ -47,3 +47,4 @@ A repository for **Amiga Development** related brews.
 ### [GCC](https://github.com/BartmanAbyss/gcc/tree/amiga-8_3_0) v8.3.0
 	brew install tditlu/amiga/amiga-gcc
 > GDB is disabled for now...
+> Example project can be found [here](https://github.com/tditlu/homebrew-amiga/blob/master/examples/amiga-gcc/)
