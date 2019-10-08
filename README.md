@@ -33,7 +33,7 @@ A repository for **Amiga Development** related brews.
 
 ### [Modpack](https://github.com/amigadev/modpack)
 	brew install tditlu/amiga/modpack
-> Player:
+> **Player:**
 > [http://aminet.net/package/mus/misc/P6108](http://aminet.net/package/mus/misc/P6108)
 
 ### [IRA](http://aminet.net/package/dev/asm/ira) v2.09
@@ -41,12 +41,10 @@ A repository for **Amiga Development** related brews.
 
 ### [RNC ProPackED](https://github.com/lab313ru/rnc_propack_source) v1.4
 	brew install tditlu/amiga/rnc
-> **Unpacker**:
-
+> **Unpacker:**
 > [http://aminet.net/package/util/pack/RNC_ProPack](http://aminet.net/package/util/pack/RNC_ProPack)
 
 ### [GCC](https://github.com/BartmanAbyss/gcc/tree/amiga-8_3_0) v8.3.0
 	brew install tditlu/amiga/amiga-gcc
-> GDB is disabled for now...
-
+> **GDB is disabled for now...**
 > Example project can be found [here](https://github.com/tditlu/homebrew-amiga/blob/master/examples/amiga-gcc/)
