@@ -1,29 +1,29 @@
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
-  url 'http://server.owl.de/~frank/tags/vbcc0_9fP1.tar.gz'
-  mirror 'http://todi.se/brew/vbcc/0.91f/vbcc.tar.gz'
-  version '0.911f'
-  sha256 '63a652c07b001a138566a84dd6059403cac325c597b646acb41f70a9d0ea4097'
+  url 'http://server.owl.de/~frank/tags/vbcc0_9g.tar.gz'
+  mirror 'http://todi.se/brew/vbcc/0.91g/vbcc.tar.gz'
+  version '0.911g'
+  sha256 '25d347fbe9600b41e4f022bcea970040618511b36c1b2041bd0281e70626b555'
 
   resource 'vbcc_target_m68k_amigaos' do
-    url 'http://server.owl.de/~frank/vbcc/2017-08-14/vbcc_target_m68k-amigaos.lha', :using => :nounzip
-    mirror 'http://todi.se/brew/vbcc/2017-08-14/vbcc_target_m68k-amigaos.lha'
-    version '2017-08-14'
-    sha256 '515e471b007b3cfe2ba2d83445d08c1d3696b48e93f106d070f7ee4eb72b0f42'
+    url 'http://server.owl.de/~frank/vbcc/2019-10-04/vbcc_target_m68k-amigaos.lha', :using => :nounzip
+    mirror 'http://todi.se/brew/vbcc/2019-10-04/vbcc_target_m68k-amigaos.lha'
+    version '2019-10-04'
+    sha256 'b97b43546f25580deeda7b5376009daf9cde57f608ffb9e6afbd2cba28025865'
   end
 
   resource "vbcc_target_m68k_kick13" do
-    url 'http://server.owl.de/~frank/vbcc/2017-08-14/vbcc_target_m68k-kick13.lha', :using => :nounzip
-    mirror 'http://todi.se/brew/vbcc/2017-08-14/vbcc_target_m68k-kick13.lha'
-    version '2017-08-14'
-    sha256 '68b73adb66dbb59302c9cb06f0a7fb91171b0b967a974d2d220916ac65926573'
+    url 'http://server.owl.de/~frank/vbcc/2019-10-04/vbcc_target_m68k-kick13.lha', :using => :nounzip
+    mirror 'http://todi.se/brew/vbcc/2019-10-04/vbcc_target_m68k-kick13.lha'
+    version '2019-10-04'
+    sha256 '4b4747812c3c3a46ea270278a4ed164ccbeb4e153e6cbc5373b7adc67351c3a6'
   end
 
   resource "vbcc_unix_config" do
-    url 'http://server.owl.de/~frank/vbcc/2017-08-14/vbcc_unix_config.tar.gz'
-    mirror 'http://todi.se/brew/vbcc/2017-08-14/vbcc_unix_config.tar.gz'
-    version '2017-08-14'
-    sha256 '15e24da750943c50648fa0e8aca8a0d540c9a61610bfd62c31672715b0ec1d45'
+    url 'http://server.owl.de/~frank/vbcc/2019-10-04/vbcc_unix_config.tar.gz'
+    mirror 'http://todi.se/brew/vbcc/2019-10-04/vbcc_unix_config.tar.gz'
+    version '2019-10-04'
+    sha256 'd8563016adefd3ef84b7a1e33e6a552feb978c16b5f63ec917861d72a531574e'
   end
 
   depends_on 'lha' => :build
