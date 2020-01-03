@@ -27,9 +27,9 @@ A repository for **Amiga Development** related brews.
 ### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.5
 	brew install tditlu/amiga/shrinkler
 
-### [amitools](https://github.com/cnvogelg/amitools) v0.2.0
-	brew install python@2
-	$(brew --prefix python@2)/bin/pip2 install amitools
+### [amitools](https://github.com/cnvogelg/amitools) v0.3.0
+	brew install python@3
+	$(brew --prefix python@3)/bin/pip3 install amitools
 
 ### [Modpack](https://github.com/amigadev/modpack)
 	brew install tditlu/amiga/modpack
