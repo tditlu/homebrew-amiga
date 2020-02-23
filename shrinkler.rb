@@ -1,9 +1,10 @@
 class Shrinkler < Formula
   desc "Shrinkler executable file compressor for Amiga by Blueberry"
   homepage "https://github.com/askeksa/Shrinkler"
-  url "http://todi.se/brew/shrinkler/4.5/shrinkler.zip"
-  version "4.5"
-  sha256 "15a4219ad5279d2ebdd6917b99a80c721acaa5d6c8d045adffcaf2761fa6e71d"
+  url "http://todi.se/brew/shrinkler/4.6/shrinkler.zip"
+  mirror 'http://crinkler.net/shrinkler46.zip'
+  version "4.6"
+  sha256 "2046ac4a5336135741b8e03f0dab3c4070a13eeef52343bcb5573de071956355"
 
   def install
     File.rename 'MacOSX/Shrinkler', 'MacOSX/shrinkler'
