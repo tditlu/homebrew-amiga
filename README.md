@@ -24,7 +24,7 @@ A repository for **Amiga Development** related brews.
 ### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.0
 	brew install tditlu/amiga/amigeconv
 
-### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.5
+### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.6
 	brew install tditlu/amiga/shrinkler
 
 ### [amitools](https://github.com/cnvogelg/amitools) v0.3.0
