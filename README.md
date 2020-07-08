@@ -18,10 +18,10 @@ A repository for **Amiga Development** related brews.
 ### [vasm](http://sun.hasenbraten.de/vasm/) v1.8h
 	brew install tditlu/amiga/vasm
 
-### [vlink](http://sun.hasenbraten.de/vlink/) v0.16d
+### [vlink](http://sun.hasenbraten.de/vlink/) v0.16e
 	brew install tditlu/amiga/vlink
 
-### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.0
+### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.1
 	brew install tditlu/amiga/amigeconv
 
 ### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.6
