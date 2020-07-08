@@ -1,9 +1,9 @@
 class Amigeconv < Formula
   desc ""
   homepage "https://github.com/tditlu/amigeconv"
-  url "http://todi.se/brew/amigeconv/1.0.0/amigeconv.zip"
-  version "1.0.0"
-  sha256 "0ad40a4dfcce85cd359c438b6469be30474e8b7f21f75fc76e9d66fa01f1ab17"
+  url "http://todi.se/brew/amigeconv/1.0.1/amigeconv.zip"
+  version "1.0.1"
+  sha256 "a6acf5fa0515a40454e69976df5db968c9575fce4f94509a64e21fd88f1396cc"
 
   def install
     system 'make'
