@@ -1,4 +1,4 @@
-class Amigeconv < Formula
+class Shadetabler < Formula
   desc ""
   homepage "https://github.com/tditlu/shadetabler"
   url "http://todi.se/brew/shadetabler/1.0.0/shadetabler.zip"
