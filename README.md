@@ -18,7 +18,7 @@ A repository for **Amiga Development** related brews.
 ### [vasm](http://sun.hasenbraten.de/vasm/) v1.8j
 	brew install tditlu/amiga/vasm
 
-### [vlink](http://sun.hasenbraten.de/vlink/) v0.16f
+### [vlink](http://sun.hasenbraten.de/vlink/) v0.16g
 	brew install tditlu/amiga/vlink
 
 ### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.1
