@@ -1,7 +1,7 @@
 class Vlink < Formula
     homepage 'http://sun.hasenbraten.de/vlink/'
-    url 'https://server.owl.de/~frank/tags/vlink0_16g.tar.gz'
-    mirror 'https://todi.se/brew/vlink/0.16g/vlink.tar.gz'
+    url 'https://todi.se/brew/vlink/0.16g/vlink.tar.gz'
+    mirror 'https://server.owl.de/~frank/tags/vlink0_16g.tar.gz'
     version '0.16g'
     sha256 '4792740bda3850e82d22bd87d54a918c81571eff0fc447c52b94b2af38e90ba4'
 
