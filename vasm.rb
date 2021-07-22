@@ -1,9 +1,9 @@
 class Vasm < Formula
   homepage 'http://sun.hasenbraten.de/vasm/'
-  url 'https://todi.se/brew/vasm/1.8k/vasm.tar.gz'
-
-  version '1.8k'
-  sha256 '16d82a104c4122a2eb259fb5ee7326e909f544c1bbd5a1749584677fcba47967'
+  url 'https://todi.se/brew/vasm/1.8l/vasm.tar.gz'
+  mirror 'http://phoenix.owl.de/tags/vasm1_8l.tar.gz'
+  version '1.8l'
+  sha256 'ea0c340b350d8fe8ac36017668b4593cc5fed945cc024944c7f7eed2cb58fdf8'
 
   def install
     system "mkdir -p obj"
