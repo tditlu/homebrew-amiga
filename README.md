@@ -15,10 +15,10 @@ A repository for **Amiga Development** related brews.
 ### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9g
 	brew install tditlu/amiga/vbcc
 
-### [vasm](http://sun.hasenbraten.de/vasm/) v1.8l
+### [vasm](http://sun.hasenbraten.de/vasm/) v1.9
 	brew install tditlu/amiga/vasm
 
-### [vlink](http://sun.hasenbraten.de/vlink/) v0.16h
+### [vlink](http://sun.hasenbraten.de/vlink/) v0.17
 	brew install tditlu/amiga/vlink
 
 ### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.5
@@ -27,7 +27,7 @@ A repository for **Amiga Development** related brews.
 ### [ShadeTabler](https://github.com/tditlu/shadetabler) v1.0.4
 	brew install tditlu/amiga/shadetabler
 
-### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.6
+### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.7
 	brew install tditlu/amiga/shrinkler
 
 ### [amitools](https://github.com/cnvogelg/amitools)
