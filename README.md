@@ -12,7 +12,7 @@ A repository for **Amiga Development** related brews.
 
 ## Formulas:
 
-### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9h
+### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9h patch 2
 	brew install tditlu/amiga/vbcc
 
 ### [vasm](http://sun.hasenbraten.de/vasm/) v1.9
