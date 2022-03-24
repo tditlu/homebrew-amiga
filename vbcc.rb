@@ -1,9 +1,8 @@
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
   url 'https://todi.se/brew/vbcc/0.9hp2/vbcc.tar.gz'
-  mirror 'http://phoenix.owl.de/tags/vbcc0_9hP2.tar.gzz'
   version '0.9hp2'
-  sha256 '26bc67a217232f32d264eb77d79682d3da40aa0e3ef5ed10e46ac019b2913109'
+  sha256 '4946f3e2a5dcf06f5f1993c17eec870529998277757dbe5c76d4039bd3e150a1'
 
   resource 'vbcc_target_m68k_amigaos' do
     url 'https://todi.se/brew/vbcc/2022-03-23/vbcc_target_m68k-amigaos.lha', :using => :nounzip
