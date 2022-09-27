@@ -1,9 +1,9 @@
 class Vlink < Formula
-  homepage 'http://sun.hasenbraten.de/vlink/'
-  url 'https://todi.se/brew/vlink/0.17/vlink.tar.gz'
-  mirror 'http://phoenix.owl.de/tags/vlink0_17.tar.gz'
-  version '0.17'
-  sha256 'e9596a0160149a423ca1c31fcb830f446b8deaa33d72c379555fa7097012a851'
+    homepage 'http://sun.hasenbraten.de/vlink/'
+    url 'https://todi.se/brew/vlink/0.17a/vlink.tar.gz'
+    mirror 'http://phoenix.owl.de/tags/vlink0_17a.tar.gz'
+    version '0.17a'
+    sha256 'f6754913d47bc97cf4771cc0aa7c51de368a04894be35b8dc5e4beac527f5b82'
 
   def install
     mkdir 'objects'
