@@ -43,6 +43,9 @@ Upgrade:
 > **Player:**
 > [http://aminet.net/package/mus/misc/P6108](http://aminet.net/package/mus/misc/P6108)
 
+### [vda68k](http://sun.hasenbraten.de/~frank/projects) v1.5
+	brew install tditlu/amiga/vda68k
+
 ### [IRA](http://aminet.net/package/dev/asm/ira) v2.09
 	brew install tditlu/amiga/ira
 
