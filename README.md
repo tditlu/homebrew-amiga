@@ -30,12 +30,20 @@ A repository for **Amiga Development** related brews.
 ### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.7
 	brew install tditlu/amiga/shrinkler
 
+### [salvador](https://github.com/emmanuel-marty/salvador) v1.4.2
+	brew install tditlu/amiga/salvador
+> **Unpacker:**
+> [https://github.com/emmanuel-marty/unzx0_68000k](https://github.com/emmanuel-marty/unzx0_68000)
+
+### [RNC ProPackED](https://github.com/lab313ru/rnc_propack_source) v1.4
+	brew install tditlu/amiga/rnc
+> **Unpacker:**
+> [http://aminet.net/package/util/pack/RNC_ProPack](http://aminet.net/package/util/pack/RNC_ProPack)
+
 ### [amitools](https://github.com/cnvogelg/amitools)
 	brew install python@3
 	$(brew --prefix python@3)/bin/pip3 install amitools
-
-Upgrade:
-
+**Upgrade:**
 	$(brew --prefix python@3)/bin/pip3 install amitools --upgrade
 
 ### [Modpack](https://github.com/amigadev/modpack)
@@ -48,11 +56,6 @@ Upgrade:
 
 ### [IRA](http://aminet.net/package/dev/asm/ira) v2.09
 	brew install tditlu/amiga/ira
-
-### [RNC ProPackED](https://github.com/lab313ru/rnc_propack_source) v1.4
-	brew install tditlu/amiga/rnc
-> **Unpacker:**
-> [http://aminet.net/package/util/pack/RNC_ProPack](http://aminet.net/package/util/pack/RNC_ProPack)
 
 ### [GCC](https://github.com/BartmanAbyss/gcc/tree/amiga-8_3_0) v8.3.0
 	brew install tditlu/amiga/amiga-gcc
