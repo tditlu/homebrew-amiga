@@ -17,7 +17,7 @@ class Vasm < Formula
     bin.install "vasmm68k_mot"
 
     system "make CPU=m68k SYNTAX=std vasmm68k_std"
-    bin.install "vasmm68k_mot"
+    bin.install "vasmm68k_std"
 
     system 'make vobjdump'
     bin.install 'vobjdump'
