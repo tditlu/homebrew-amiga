@@ -42,7 +42,8 @@ A repository for **Amiga Development** related brews.
 
 ### [amitools](https://github.com/cnvogelg/amitools)
 	brew install python@3
-	$(brew --prefix python@3)/bin/pip3 install amitools
+	$(brew --prefix python@3)/bin/pip3 install cython
+	$(brew --prefix python@3)/bin/pip3 install -U git+https://github.com/cnvogelg/amitools.git
 
 **Upgrade:**
 
