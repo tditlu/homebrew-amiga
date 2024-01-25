@@ -1,28 +1,28 @@
 class Vbcc < Formula
   homepage 'http://www.compilers.de/vbcc.html'
-  url 'https://todi.se/brew/vbcc/0.9hp2/vbcc.tar.gz'
-  version '0.9hp2'
+  url 'https://todi.se/brew/vbcc/0.9hp3/vbcc.tar.gz'
+  version '0.9hp3'
   sha256 '4946f3e2a5dcf06f5f1993c17eec870529998277757dbe5c76d4039bd3e150a1'
 
   resource 'vbcc_target_m68k_amigaos' do
-    url 'https://todi.se/brew/vbcc/2022-03-23/vbcc_target_m68k-amigaos.lha', :using => :nounzip
-    mirror 'http://phoenix.owl.de/vbcc/2022-03-23/vbcc_target_m68k-amigaos.lha'
-    version '2022-03-23'
-    sha256 '64640fbdfa324ca3eddebf4b6453dcff663234758b08f646d217b99e34f68d02'
+    url 'https://todi.se/brew/vbcc/2022-05-22/vbcc_target_m68k-amigaos.lha', :using => :nounzip
+    mirror 'http://phoenix.owl.de/vbcc/2022-05-22/vbcc_target_m68k-amigaos.lha'
+    version '2022-05-22'
+    sha256 'ec734d7115359cdb5d1c70349284ecbd5712ef47e8bc28d4150117c6f8c73289'
   end
 
   resource 'vbcc_target_m68k_kick13' do
-    url 'https://todi.se/brew/vbcc/2022-03-23/vbcc_target_m68k-kick13.lha', :using => :nounzip
-    mirror 'http://phoenix.owl.de/vbcc/2022-03-23/vbcc_target_m68k-kick13.lha'
-    version '2022-03-23'
-    sha256 '513a8db2188ebf6fcb1dd7527b9d7b437970933b1137e1d777abe61985a1fbd4'
+    url 'https://todi.se/brew/vbcc/2022-05-22/vbcc_target_m68k-kick13.lha', :using => :nounzip
+    mirror 'http://phoenix.owl.de/vbcc/2022-05-22/vbcc_target_m68k-kick13.lha'
+    version '2022-05-22'
+    sha256 '8815948604eb50ec8b82d4fd2c9d673f5ec59a6623778edfcb29a7df608ea711'
   end
 
   resource 'vbcc_unix_config' do
-    url 'https://todi.se/brew/vbcc/2022-03-23/vbcc_unix_config.tar.gz'
-    mirror 'http://phoenix.owl.de/vbcc/2022-03-23/vbcc_unix_config.tar.gz'
-    version '2022-03-23'
-    sha256 '9061fc9d2a7fc7817f0aa3a135c1bb04b542fa22eaf2879def4e8171b869f885'
+    url 'https://todi.se/brew/vbcc/2022-05-22/vbcc_unix_config.tar.gz'
+    mirror 'http://phoenix.owl.de/vbcc/2022-05-22/vbcc_unix_config.tar.gz'
+    version '2022-05-22'
+    sha256 'c643a095439aaf0cbcf7521920c0ff5d1cb07a4fc6fe8cc59e69ae1dbb329497'
   end
 
   depends_on 'lha' => :build
