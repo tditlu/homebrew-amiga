@@ -57,7 +57,7 @@ A repository for **Amiga Development** related brews.
 ### [vda68k](http://sun.hasenbraten.de/~frank/projects) v1.5
 	brew install tditlu/amiga/vda68k
 
-### [IRA](http://aminet.net/package/dev/asm/ira) v2.09
+### [IRA](http://aminet.net/package/dev/asm/ira) v2.10
 	brew install tditlu/amiga/ira
 
 ### [GCC](https://github.com/BartmanAbyss/gcc/tree/amiga-8_3_0) v8.3.0
