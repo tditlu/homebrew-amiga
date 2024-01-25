@@ -9,7 +9,7 @@ class Vasm < Formula
     system "mkdir -p obj"
 
     inreplace 'Makefile' do |s|
-      s.change_make_var! 'COPTS', "-c -O2 -DOUTAOUT -DOUTBIN -DOUTELF -DOUTHUNK -DOUTSREC -DOUTTOS -DOUTVOBJ #{ENV.cflags}"
+      s.change_make_var! 'CFLAGS', "-c -O2 -DOUTAOUT -DOUTBIN -DOUTELF -DOUTHUNK -DOUTSREC -DOUTTOS -DOUTVOBJ #{ENV.cflags}"
       s.change_make_var! 'LDFLAGS', "-lm #{ENV.ldflags}"
     end
 
