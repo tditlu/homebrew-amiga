@@ -21,7 +21,7 @@ A repository for **Amiga Development** related brews.
 ### [vlink](http://sun.hasenbraten.de/vlink/) v0.17a
 	brew install tditlu/amiga/vlink
 
-### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.5
+### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.6
 	brew install tditlu/amiga/amigeconv
 
 ### [ShadeTabler](https://github.com/tditlu/shadetabler) v1.0.4
