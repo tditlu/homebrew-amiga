@@ -3,7 +3,7 @@
 A repository for **Amiga Development** related brews.
 
 ## Requirements:
-* [Homebrew](https://github.com/mxcl/homebrew)
+* [Homebrew](https://brew.sh/)
 
 ## Installation:
 
