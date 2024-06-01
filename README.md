@@ -24,7 +24,7 @@ A repository for **Amiga Development** related brews.
 ### [Amigeconv](https://github.com/tditlu/amigeconv) v1.0.7
 	brew install tditlu/amiga/amigeconv
 
-### [ShadeTabler](https://github.com/tditlu/shadetabler) v1.0.4
+### [ShadeTabler](https://github.com/tditlu/shadetabler) v1.0.5
 	brew install tditlu/amiga/shadetabler
 
 ### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.7
