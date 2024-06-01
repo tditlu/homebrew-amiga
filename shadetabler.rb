@@ -1,9 +1,9 @@
 class Shadetabler < Formula
   desc ""
   homepage "https://github.com/tditlu/shadetabler"
-  url "http://todi.se/brew/shadetabler/1.0.4/shadetabler.zip"
-  version "1.0.4"
-  sha256 "0ff4381726016f3f3f9998e33893d414b75b11d1155496bc7cd8b2e67ae1cb56"
+  url "http://todi.se/brew/shadetabler/1.0.5/shadetabler.zip"
+  version "1.0.5"
+  sha256 "59633c91b4564f289363229437a92a68efb7fd3f702565a1f3166bcb656ee59f"
 
   def install
     system 'make'
