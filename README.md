@@ -41,13 +41,13 @@ A repository for **Amiga Development** related brews.
 > [http://aminet.net/package/util/pack/RNC_ProPack](http://aminet.net/package/util/pack/RNC_ProPack)
 
 ### [amitools](https://github.com/cnvogelg/amitools)
-	brew install python@3
-	$(brew --prefix python@3)/bin/pip3 install cython
-	$(brew --prefix python@3)/bin/pip3 install -U git+https://github.com/cnvogelg/amitools.git
+	brew install python@3 pipx
+	pipx install cython
+	pipx install git+https://github.com/cnvogelg/amitools.git
 
 **Upgrade:**
 
-	$(brew --prefix python@3)/bin/pip3 install amitools --upgrade
+	pipx upgrade amitools
 
 ### [Modpack](https://github.com/amigadev/modpack)
 	brew install tditlu/amiga/modpack
