@@ -10,7 +10,7 @@ class Vlink < Formula
 
     inreplace 'Makefile' do |s|
       s.change_make_var! 'CC', "#{ENV.cc}"
-      s.change_make_var! 'COPTS', "-fomit-frame-pointer -c #{ENV.cflags}"
+      s.change_make_var! 'CFLAGS', "-fomit-frame-pointer -c #{ENV.cflags}"
       s.change_make_var! 'LD', "#{ENV.cc}"
       s.change_make_var! 'LDOPTS', "#{ENV.ldflags}"
     end
