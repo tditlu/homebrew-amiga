@@ -42,8 +42,8 @@ A repository for **Amiga Development** related brews.
 
 ### [amitools](https://github.com/cnvogelg/amitools)
 	brew install python@3 pipx
-	pipx install cython
 	pipx install git+https://github.com/cnvogelg/amitools.git
+	pipx inject amitools cython lhafile machine68k
 
 **Upgrade:**
 
