@@ -30,6 +30,9 @@ A repository for **Amiga Development** related brews.
 ### [Shrinkler](https://github.com/askeksa/Shrinkler) v4.7
 	brew install tditlu/amiga/shrinkler
 
+### [Cranker](http://neoscientists.org/~bifat/binarydistillery/cranker/) v0.66
+	brew install tditlu/amiga/cranker
+
 ### [salvador](https://github.com/emmanuel-marty/salvador) v1.4.2
 	brew install tditlu/amiga/salvador
 > **Unpacker:**
