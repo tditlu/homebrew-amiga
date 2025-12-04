@@ -15,10 +15,10 @@ A repository for **Amiga Development** related brews.
 ### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9h patch 3
 	brew install tditlu/amiga/vbcc
 
-### [vasm](http://sun.hasenbraten.de/vasm/) v2.0c
+### [vasm](http://sun.hasenbraten.de/vasm/) v2.0d
 	brew install tditlu/amiga/vasm
 
-### [vlink](http://sun.hasenbraten.de/vlink/) v0.18
+### [vlink](http://sun.hasenbraten.de/vlink/) v0.18a
 	brew install tditlu/amiga/vlink
 
 ### [Amigeconv](https://github.com/tditlu/amigeconv) v1.1.1
