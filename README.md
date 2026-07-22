@@ -62,3 +62,6 @@ A repository for **Amiga Development** related brews.
 
 ### [IRA](http://aminet.net/package/dev/asm/ira) v2.10
 	brew install tditlu/amiga/ira
+
+### [Bartman Amiga GCC](https://github.com/BartmanAbyss/vscode-amiga-debug) v1.8.2
+	brew install tditlu/amiga/bartman-amiga-gcc
