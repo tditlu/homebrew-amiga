@@ -65,3 +65,4 @@ A repository for **Amiga Development** related brews.
 
 ### [Bartman Amiga GCC](https://github.com/BartmanAbyss/vscode-amiga-debug) v1.8.2
 	brew install tditlu/amiga/bartman-amiga-gcc
+> Example project can be found [here](https://github.com/tditlu/homebrew-amiga/blob/master/examples/bartman-amiga-gcc/)

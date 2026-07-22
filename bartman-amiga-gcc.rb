@@ -1,4 +1,4 @@
-class BartmanAmigaGcc < Formula
+class AmigaGcc < Formula
   desc "Amiga m68k GCC toolchain from Bartman's vscode-amiga-debug extension"
   homepage "https://github.com/BartmanAbyss/vscode-amiga-debug"
   url "https://github.com/BartmanAbyss/vscode-amiga-debug/releases/download/1.8.2/amiga-debug-1.8.2.vsix"
@@ -11,7 +11,7 @@ class BartmanAmigaGcc < Formula
 
   def install
     vsix = Dir[buildpath/"*.vsix"].first
-    odie "Visual Studio extension archive not found" unless vsix
+    odie "VSIX archive not found" unless vsix
 
     source_root = buildpath/"source"
     source_root.mkpath
@@ -23,7 +23,7 @@ class BartmanAmigaGcc < Formula
 
       (libexec/"bin/darwin").install \
         "extension/bin/darwin/opt",
-        "extension/bin/darwin/exe2adf"
+        "extension/bin/darwin/elf2hunk"
 
       (libexec/"template/support").install \
         "extension/template/support/gcc8_a_support.s",
@@ -32,7 +32,7 @@ class BartmanAmigaGcc < Formula
     end
 
     executable_paths = [
-      "exe2adf",
+      "elf2hunk",
 
       "opt/bin/m68k-amiga-elf-addr2line",
       "opt/bin/m68k-amiga-elf-as",
@@ -63,7 +63,7 @@ class BartmanAmigaGcc < Formula
       chmod 0755, libexec/"bin/darwin"/relative_path
     end
 
-    bin.install_symlink libexec/"bin/darwin/exe2adf"
+    bin.install_symlink libexec/"bin/darwin/elf2hunk"
 
     Dir[libexec/"bin/darwin/opt/bin/*"].sort.each do |tool|
       bin.install_symlink tool if File.file?(tool)
