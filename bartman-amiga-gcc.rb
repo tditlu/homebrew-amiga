@@ -1,4 +1,4 @@
-class AmigaGcc < Formula
+class BartmanAmigaGcc < Formula
   desc "Amiga m68k GCC toolchain from Bartman's vscode-amiga-debug extension"
   homepage "https://github.com/BartmanAbyss/vscode-amiga-debug"
   url "https://github.com/BartmanAbyss/vscode-amiga-debug/releases/download/1.8.2/amiga-debug-1.8.2.vsix"
@@ -11,7 +11,7 @@ class AmigaGcc < Formula
 
   def install
     vsix = Dir[buildpath/"*.vsix"].first
-    odie "VSIX archive not found" unless vsix
+    odie "Visual Studio extension archive not found" unless vsix
 
     source_root = buildpath/"source"
     source_root.mkpath
