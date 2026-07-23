@@ -49,7 +49,7 @@ QUIET := $(if $(V),,@)
 # Compiler and linker flags
 ################################################################################
 
-COMMONFLAGS := \
+CFLAGS := \
 	-m$(CPU) \
 	-Wall \
 	-Wextra \
@@ -57,10 +57,8 @@ COMMONFLAGS := \
 	-Wno-volatile-register-var \
 	-ffreestanding \
 	-fno-builtin \
-	-fomit-frame-pointer
-
-CFLAGS := \
-	$(COMMONFLAGS) \
+	-fno-common \
+	-fomit-frame-pointer \
 	-Os \
 	-g \
 	-flto \
