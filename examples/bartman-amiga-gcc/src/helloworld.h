@@ -5,7 +5,7 @@
 
 #include <exec/types.h>
 
-LONG hello_world(void);
+extern LONG hello_world(void);
 
 #endif /* HELLOWORLD_H_ */
 

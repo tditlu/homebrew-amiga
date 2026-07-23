@@ -5,8 +5,6 @@ class BartmanAmigaGcc < Formula
   version "1.8.2"
   sha256 "c1e2b11175a5c5036d47eef095a21a616fbeb9f1a681364519c7910583d7ee3e"
 
-  depends_on :macos
-
   GCC_VERSION = "15.1.0".freeze
 
   def install
@@ -16,57 +14,64 @@ class BartmanAmigaGcc < Formula
     source_root = buildpath/"source"
     source_root.mkpath
 
-    system "/usr/bin/unzip", "-q", vsix, "-d", source_root
+    system "unzip", "-q", vsix, "-d", source_root
 
-    cd source_root do
-      (libexec/"bin").install "extension/bin/symbols"
+    platform = OS.mac? ? "darwin" : "linux"
 
-      (libexec/"bin/darwin").install \
-        "extension/bin/darwin/opt",
-        "extension/bin/darwin/elf2hunk"
+    extension_root = source_root/"extension"
+    platform_root = extension_root/"bin"/platform
+    toolchain_root = platform_root/"opt"
 
-      (libexec/"template/support").install \
-        "extension/template/support/gcc8_a_support.s",
-        "extension/template/support/gcc8_c_support.c",
-        "extension/template/support/gcc8_c_support.h"
-    end
+    odie "Unsupported platform directory: #{platform_root}" unless platform_root.directory?
+    odie "Toolchain directory not found: #{toolchain_root}" unless toolchain_root.directory?
+
+    prefix.install toolchain_root.children
+
+    # Install elf2hunk alongside the other public executables
+    bin.install platform_root/"elf2hunk"
+
+    # Files used by the example project templates
+    (prefix/"template/support").install \
+      extension_root/"template/support/gcc8_a_support.s",
+      extension_root/"template/support/gcc8_c_support.c",
+      extension_root/"template/support/gcc8_c_support.h"
+
+    # Debugger symbol definitions distributed with the extension
+    (prefix/"support").install extension_root/"bin/symbols"
 
     executable_paths = [
-      "elf2hunk",
+      "bin/elf2hunk",
 
-      "opt/bin/m68k-amiga-elf-addr2line",
-      "opt/bin/m68k-amiga-elf-as",
-      "opt/bin/m68k-amiga-elf-gcc",
-      "opt/bin/m68k-amiga-elf-gdb",
-      "opt/bin/m68k-amiga-elf-ld",
-      "opt/bin/m68k-amiga-elf-objdump",
+      "bin/m68k-amiga-elf-addr2line",
+      "bin/m68k-amiga-elf-as",
+      "bin/m68k-amiga-elf-gcc",
+      "bin/m68k-amiga-elf-gdb",
+      "bin/m68k-amiga-elf-ld",
+      "bin/m68k-amiga-elf-objdump",
 
-      "opt/libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/cc1",
-      "opt/libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/cc1plus",
-      "opt/libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/collect2",
-      "opt/libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/lto-wrapper",
-      "opt/libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/lto1",
+      "libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/cc1",
+      "libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/cc1plus",
+      "libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/collect2",
+      "libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/lto-wrapper",
+      "libexec/gcc/m68k-amiga-elf/#{GCC_VERSION}/lto1",
 
-      "opt/m68k-amiga-elf/bin/ar",
-      "opt/m68k-amiga-elf/bin/as",
-      "opt/m68k-amiga-elf/bin/ld",
-      "opt/m68k-amiga-elf/bin/ld.bfd",
-      "opt/m68k-amiga-elf/bin/nm",
-      "opt/m68k-amiga-elf/bin/objcopy",
-      "opt/m68k-amiga-elf/bin/objdump",
-      "opt/m68k-amiga-elf/bin/ranlib",
-      "opt/m68k-amiga-elf/bin/readelf",
-      "opt/m68k-amiga-elf/bin/strip",
+      "m68k-amiga-elf/bin/ar",
+      "m68k-amiga-elf/bin/as",
+      "m68k-amiga-elf/bin/ld",
+      "m68k-amiga-elf/bin/ld.bfd",
+      "m68k-amiga-elf/bin/nm",
+      "m68k-amiga-elf/bin/objcopy",
+      "m68k-amiga-elf/bin/objdump",
+      "m68k-amiga-elf/bin/ranlib",
+      "m68k-amiga-elf/bin/readelf",
+      "m68k-amiga-elf/bin/strip",
     ]
 
     executable_paths.each do |relative_path|
-      chmod 0755, libexec/"bin/darwin"/relative_path
-    end
+      executable = prefix/relative_path
+      odie "Expected executable not found: #{executable}" unless executable.file?
 
-    bin.install_symlink libexec/"bin/darwin/elf2hunk"
-
-    Dir[libexec/"bin/darwin/opt/bin/*"].sort.each do |tool|
-      bin.install_symlink tool if File.file?(tool)
+      executable.chmod 0755
     end
   end
 end
