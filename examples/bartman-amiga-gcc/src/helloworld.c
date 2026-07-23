@@ -26,7 +26,7 @@ int main() {
 }
 
 /*
-// Add this if USE_SUPPORT = no
+// Required only when SUPPORT = no in the Makefile
 __attribute__((used)) __attribute__((section(".text.unlikely"))) int _start() {
 	return main();
 }
