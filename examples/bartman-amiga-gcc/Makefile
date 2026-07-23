@@ -63,6 +63,7 @@ CFLAGS := \
 	$(COMMONFLAGS) \
 	-Os \
 	-g \
+	-flto \
 	-I$(INCDIR) \
 	-I$(SDKDIR)
 
@@ -76,13 +77,17 @@ ASFLAGS := \
 VASMFLAGS := \
 	-m$(CPU) \
 	-Felf \
-	-quiet \
+	-opt-fconst \
+	-nowarn=62 \
+	-dwarf=3 \
+	-x \
 	-I$(INCDIR) \
 	-I$(SDKDIR)
 
 LDFLAGS := \
 	-m$(CPU) \
 	-nostdlib \
+	-flto \
 	-Wl,--emit-relocs,--gc-sections,-Ttext=0
 
 ################################################################################
