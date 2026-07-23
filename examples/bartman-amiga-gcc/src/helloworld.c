@@ -3,21 +3,31 @@
 #include <proto/exec.h>
 #include <proto/dos.h>
 
+#include "helloworld.h"
+
+static const BYTE message[] = "Hello world from C!\n";
+
 struct ExecBase *SysBase;
 struct DosLibrary *DOSBase;
 
 int main() {
-	SysBase = *((struct ExecBase**)4UL);
+	SysBase = *(struct ExecBase * volatile *)4UL;
 
-	DOSBase = (struct DosLibrary*)OpenLibrary("dos.library", 0);
+	DOSBase = (struct DosLibrary*)OpenLibrary((CONST_STRPTR)"dos.library", 0);
 	if (!DOSBase) { return RETURN_ERROR; }
 
-	Write(Output(), "Hello console!\n", sizeof("Hello console!\n"));
+	Write(Output(), (APTR)message, sizeof(message) - 1);
 
 	CloseLibrary((struct Library*)DOSBase);
-	return RETURN_OK;
+	// return RETURN_OK;
+
+	LONG result = hello_world();
+	return (int)result;
 }
 
+/*
+// Add this if USE_SUPPORT = no
 __attribute__((used)) __attribute__((section(".text.unlikely"))) int _start() {
 	return main();
 }
+*/
