@@ -33,7 +33,7 @@ ELF2HUNK    := $(BARTMANDIR)/bin/elf2hunk
 
 VASM        := $(VASMDIR)/bin/vasmm68k_mot
 
-SUPPORTDIR := $(BARTMANDIR)/template/support
+SUPPORTDIR := $(BARTMANDIR)/support
 SDKDIR     := $(BARTMANDIR)/m68k-amiga-elf/sys-include
 
 ################################################################################

@@ -30,8 +30,8 @@ class BartmanAmigaGcc < Formula
     # Install elf2hunk alongside the other public executables
     bin.install platform_root/"elf2hunk"
 
-    # Files used by the example project templates
-    (prefix/"template/support").install \
+    # GCC runtime support files
+    (prefix/"support").install \
       extension_root/"template/support/gcc8_a_support.s",
       extension_root/"template/support/gcc8_c_support.c",
       extension_root/"template/support/gcc8_c_support.h"
