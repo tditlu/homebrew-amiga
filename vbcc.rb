@@ -48,12 +48,12 @@ class Vbcc < Formula
     (prefix/'targets').mkpath
 
     resource('vbcc_target_m68k_amigaos').stage do
-      system 'lhasa x vbcc_target_m68k-amigaos.lha'
+      system 'lha x vbcc_target_m68k-amigaos.lha'
       (prefix/'targets/m68k-amigaos').install Dir['vbcc_target_m68k-amigaos/targets/m68k-amigaos/*']
     end
 
     resource('vbcc_target_m68k_kick13').stage do
-      system 'lhasa x vbcc_target_m68k-kick13.lha'
+      system 'lha x vbcc_target_m68k-kick13.lha'
       (prefix/'targets/m68k-kick13').install Dir['vbcc_target_m68k-kick13/targets/m68k-kick13/*']
     end
 
