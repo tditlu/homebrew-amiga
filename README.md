@@ -15,7 +15,7 @@ A repository for **Amiga Development** related brews.
 ### [vbcc](http://sun.hasenbraten.de/vbcc/) v0.9h patch 3
 	brew install tditlu/amiga/vbcc
 
-### [vasm](http://sun.hasenbraten.de/vasm/) v2.0e
+### [vasm](http://sun.hasenbraten.de/vasm/) v2.0f
 	brew install tditlu/amiga/vasm
 
 ### [vlink](http://sun.hasenbraten.de/vlink/) v0.18a
@@ -60,7 +60,7 @@ A repository for **Amiga Development** related brews.
 ### [vda68k](http://sun.hasenbraten.de/~frank/projects) v1.5
 	brew install tditlu/amiga/vda68k
 
-### [IRA](http://aminet.net/package/dev/asm/ira) v2.10
+### [IRA](http://aminet.net/package/dev/asm/ira) v2.11
 	brew install tditlu/amiga/ira
 
 ### [Bartman Amiga GCC](https://github.com/BartmanAbyss/vscode-amiga-debug) v1.8.2
