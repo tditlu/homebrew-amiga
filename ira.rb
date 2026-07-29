@@ -2,7 +2,7 @@ class Ira < Formula
   homepage 'http://sun.hasenbraten.de/~frank/projects/'
   url 'https://todi.se/brew/ira/2.11/ira.tar.gz'
   version '2.11'
-  sha256 'e9a42a941ebf1b1fb378bad1fcb882113636b61747ce1280b8c42797'
+  sha256 'd02f519be595eb29c97d853d4b358cbfdacc57e646a8a2524e7a302be994e123'
 
   def install
 #    Dir.chdir 'ira' do
