@@ -25,7 +25,7 @@ class Vbcc < Formula
     sha256 'c643a095439aaf0cbcf7521920c0ff5d1cb07a4fc6fe8cc59e69ae1dbb329497'
   end
 
-  depends_on 'lha' => :build
+  depends_on "lhasa" => :build
 
   def install
 
@@ -48,12 +48,12 @@ class Vbcc < Formula
     (prefix/'targets').mkpath
 
     resource('vbcc_target_m68k_amigaos').stage do
-      system 'lha x vbcc_target_m68k-amigaos.lha'
+      system 'lhasa x vbcc_target_m68k-amigaos.lha'
       (prefix/'targets/m68k-amigaos').install Dir['vbcc_target_m68k-amigaos/targets/m68k-amigaos/*']
     end
 
     resource('vbcc_target_m68k_kick13').stage do
-      system 'lha x vbcc_target_m68k-kick13.lha'
+      system 'lhasa x vbcc_target_m68k-kick13.lha'
       (prefix/'targets/m68k-kick13').install Dir['vbcc_target_m68k-kick13/targets/m68k-kick13/*']
     end
 
