@@ -34,11 +34,18 @@ _hello_world:
 	move.l	a5,a6
 
 	jsr	_LVOOutput(a6)
-	move.l	d0,d1
+	move.l	d1,d4
 
+	move.l	d4,d1
 	lea	message,a0
 	move.l	a0,d2
 	move.l	#MESSAGE_LENGTH,d3
+	jsr	_LVOWrite(a6)
+
+	move.l	d4,d1
+	lea	message_chip,a0
+	move.l	a0,d2
+	move.l	#MESSAGE_CHIP_LENGTH,d3
 	jsr	_LVOWrite(a6)
 
 	move.l	a5,a1
@@ -69,3 +76,14 @@ message_end:
 MESSAGE_LENGTH	equ	message_end-message
 
 ********************************************************************************
+
+	section	"DATA.MEMF_CHIP",data_c ; Chip RAM: data_c (HUNK), .MEMF_CHIP (ELF/elf2hunk)
+
+message_chip:
+	dc.b	"Hello world from ASM in chipmem!",10,0
+message_chip_end:
+
+MESSAGE_CHIP_LENGTH	equ	message_chip_end-message_chip
+
+********************************************************************************
+
